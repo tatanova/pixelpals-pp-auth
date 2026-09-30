@@ -1,0 +1,27 @@
+name: PixelPals_Auth
+main: PP_Auth\Auth
+version: "30.03.2024"
+api: [1.0.3, 2.0.0, 3.0.0]
+author: "tatanova"
+description: "PixelPals Auth system plus discord system"
+
+commands:
+  changepassword:
+    description: "Changes your password"
+    permission: ch.pass
+  chpass:
+    description: "Changes your password"
+    permission: ch.pass
+  respass:
+    description: "Changes another player's password"
+    permission: res.pass
+  seepass:
+    description: "Shows another player's password (on file)"
+    permission: see.pass
+permissions:
+  res.pass:
+    default: op
+  see.pass:
+    default: op
+  ch.pass:
+    default: true
